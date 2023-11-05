@@ -46,8 +46,14 @@
   :type 'file)
 
 (defcustom flymake-actionlint1-shellcheck-executable "shellcheck"
-  "Executable file for shellcheck."
-  :type 'shellcheck)
+  "Executable file for shellcheck.
+
+Actionlint has built-in integration with shellcheck. Setting this
+variable will enable the integration in flymake.
+
+If the value of this variable is nil or the program doesn't
+exist, the integration will be disabled."
+  :type '(choice file (const nil)))
 
 (defvar-local flymake-actionlint1-process nil)
 
