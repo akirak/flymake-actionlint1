@@ -2,9 +2,6 @@
 ~flymake-actionlint1.el~ is a ~flymake~ backend for [[https://github.com/rhysd/actionlint][actionlint]], a static checker for GitHub Actions workflow files.
 
 There is another package created exactly for the same purpose,
-[[https://github.com/ROCKTAKEY/flymake-actionlint/][flymake-actionlint]], which is already available from MELPA, but I failed to get
-it working and thought it would be faster to rewrite an alternative from
-scratch, thanks to my experience in writing another flymake backend.
-
-And this package is not going to be on MELPA.
-
+[[https://github.com/ROCKTAKEY/flymake-actionlint/][flymake-actionlint]], which is already available from MELPA.
+I somehow failed to get it working, but it was easy to write an alternative
+from scratch. Problem solved.
