@@ -106,8 +106,14 @@ exist, the integration will be disabled."
                                      "-oneline"
                                      ,@(when shellcheck-bin
                                          (list "-shellcheck" shellcheck-bin))
-                                     ,(file-name-nondirectory (buffer-file-name)))
-                          :sentinel #'sentinel)))))
+                                     "-stdin-filename"
+                                     ,(file-name-nondirectory (buffer-file-name))
+                                     "-")
+                          :sentinel #'sentinel))
+      (save-restriction
+        (widen)
+        (process-send-region flymake-actionlint1-process (point-min) (point-max))
+        (process-send-eof flymake-actionlint1-process)))))
 
 (provide 'flymake-actionlint1)
 ;;; flymake-actionlint1.el ends here
