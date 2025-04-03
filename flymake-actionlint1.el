@@ -31,6 +31,9 @@
 
 ;;; Code:
 
+(require 'cl-lib)
+(require 'subr-x)
+
 (defgroup flymake-actionlint1 nil
   "A Flymake backend for actionlint."
   :group 'flymake)
