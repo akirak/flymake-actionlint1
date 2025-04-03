@@ -1,6 +1,6 @@
 ;;; flymake-actionlint1.el --- Another flymake backend for actionlint -*- lexical-binding: t -*-
 
-;; Copyright (C) 2023 Akira Komamura
+;; Copyright (C) 2023,2025 Akira Komamura
 
 ;; Author: Akira Komamura <akira.komamura@gmail.com>
 ;; Version: 0.1
